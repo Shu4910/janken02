@@ -1,0 +1,257 @@
+/* ここから下に記載していく */
+html {
+  font-size: 62.5%;
+  }
+  /* bodyのフォントサイズを1.6em（16px）に設定 */
+  body {
+  font-size: 1.6em;
+  font-family:"Open Sans",'ヒラギノ角ゴ ProN W3', Hiragino Kaku Gothic ProN, "メイリオ", Meiryo, sans-serif;
+}
+
+/* 最初は要素を隠したいものを記載するところ～ */
+#first,#second,#setting,.if_win1,.if_lose1,.if_draw1,.if_win2,.if_lose2,.if_win3,.if_lose3,.cpu4_hide,.if_win4,.if_lose4,.if_draw4,.img2,.img3{
+  display:none;
+}
+
+header{
+  text-align: center;
+  color: white;
+  background-color: #eb6100;
+}
+
+.jan-center{
+  text-align: center;
+}
+
+
+
+
+.home{
+  color: #fff;
+}
+.home:hover {
+  color: #1b2538;
+}
+
+
+.container{
+    position: relative;
+    margin:0 auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 5%;
+}
+
+
+.container h1{
+    position: absolute;
+    color: black;
+    padding:0 auto;
+    text-align: center;
+    margin:0 auto;
+    top: 50%;
+        transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    font-size: 4rem;
+  }
+
+
+  .main-word{
+    animation-name:fadeUpAnime;
+    animation-duration:0.5s;
+    animation-fill-mode:forwards;
+    opacity:0;
+    }
+    
+    @keyframes fadeUpAnime{
+      from {
+        opacity: 0;
+      transform: translateY(100px);
+      }
+    
+      to {
+        opacity: 1;
+      transform: translateY(0);
+      }
+    } 
+
+
+  @media screen and (max-width: 640px) {/* 640px以下でスマホ画面時*/
+    .container h1{
+      font-size: 2.5rem;
+    }
+    }
+
+
+  .container img{
+    width: 25%;
+    height: auto;
+    text-align: center;   
+  } 
+
+  .janken-center1{
+    text-align: center;
+    padding-top: 10%;   
+  }
+
+  .janken-center1 img{
+    width:100px;
+    height:100px;
+  }
+
+
+  .janken-center2{
+    text-align: center;  
+  }
+
+  .janken-center2 img{
+    width:100px;
+    height:100px;
+  }
+
+  .button-center{
+    text-align: center;   
+  }
+
+  .start{
+      position: relative;
+      text-align: center;   
+      margin-top: 3%;  
+      margin-left: auto;
+      margin-right: auto;
+  }
+  
+  .start input{
+    position: relative;
+    text-align: center;
+    margin-top: 1%;  
+    margin-bottom: 1%;  
+    margin-left: auto;
+    margin-right: auto;
+}
+  .start button{
+    position: relative;
+    text-align: center;
+    margin-top: 3%;  
+    margin-bottom: 1%;  
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+.cp_iptxt {
+	position: relative;
+
+}
+.cp_iptxt input[type='text'] {
+	font: 15px/24px sans-serif;
+	box-sizing: border-box;
+	transition: 0.3s;
+	letter-spacing: 1px;
+	color: #aaaaaa;
+	border: 5px solid #1b2538;
+	border-radius: 4px;
+}
+.ef input[type='text']:focus {
+	border: 5px solid #eb6100;
+	outline: none;
+}
+
+
+
+
+
+
+
+.image{
+    animation-name:fadeInAnime;
+    animation-duration:1s;
+    animation-fill-mode:forwards;
+    opacity:0;
+    }
+    
+    @keyframes fadeInAnime{
+      from {
+        opacity: 0;
+      }
+    
+      to {
+        opacity: 0.25;
+      }
+    } 
+
+
+
+
+    .main-word-fadeout{
+        animation-name: smooth-fadein-out;
+        animation-duration: 1.5s;
+        animation-timing-function: ease;
+        animation-delay: 0s;
+        animation-direction: alternate;
+      }
+ 
+      @keyframes smooth-fadein-out {
+        100% {opacity: 1;}
+        0% {opacity: 0;}
+      }
+
+      .text-center{
+        text-align: center;
+      }
+
+      .next{
+        padding-top: 2%;
+        padding-bottom: 2%;
+        text-align: center;
+        position: relative;
+      }
+
+      .next img{
+        width: 30%;
+        height: 30%;
+        margin: 0 auto;
+      }
+
+      .next p{
+        font-weight: bold;
+        font-size: 4rem;
+      }
+
+      @media screen and (max-width: 640px) {/* 640px以下でスマホ画面時*/
+        .next p{
+          font-weight: bold;
+          font-size: 2.5rem;
+        }
+        }
+
+
+
+    footer{
+      margin-top: 2%;
+      background-color:#707070;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      text-align: center;
+      color: white;
+      }
+
+    .enter,a.enter {
+        color: #fff;
+        background-color: #eb6100;
+        padding: 1%;
+        border-radius: 1vh;
+        font-size: 24px;
+            }
+
+      .enter:hover,
+      a.enter:hover {
+        color: #fff;
+        background: #FFCC33;
+      }

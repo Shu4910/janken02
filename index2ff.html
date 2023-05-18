@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/20171223192619.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <title>じゃんけんゲーム(最終戦)
+    </title>
+</head>
+<body>
+    <header>
+        <a href="main.html" class="home">Homeに戻る</a>
+      </header>
+
+    <main>
+    <div class="jan-center">
+    <div class="main-word-fadeout">
+    <p>最終戦スタート！！2回勝ったら、クリアだ！！</p>
+    <p>最初はグーじゃんけん</p>
+    </div>
+
+    <div id="cpu2">
+        <div class="jyanken">
+            <button onclick="R2_Click(0);"  class="jyanken_hand"><img src="img/jan0.png"></button>
+            <button onclick="R2_Click(1);" class="jyanken_hand"><img src="img/jan1.png"></button>
+            <button onclick="R2_Click(2);" class="jyanken_hand"><img src="img/jan2.png"></button>
+        </div>
+        
+        <p><span class="cpu2_hand"></span></p>
+        <p><img class="img2" src="img/jan.png" width="100" height="100"></p>
+
+        <p><span class="cpu3_hand"></span></p>
+        <p><img class="img3" src="img/jan.png" width="100" height="100"></p>
+
+
+        <p>勝負の回数：<span class="count_battle"></span></p>
+        <p>勝ち：<span class="count_win"></span></p>
+        <p>負け：<span class="count_lose"></span></p>
+        <p>あいこ：<span class="count_draw"></span></p>
+    </div>
+        <div class="if_win2">
+            <h1>結果は…</h1>
+
+
+            <h1><span class="player_name"></span>の勝ちだ！ゲームクリア！！おめでとう〜</h1>
+            <div class="next">
+            <div id="displaybtn">
+                <img src="img/banzai.png" alt="">
+                </div>
+            </div>
+            <button class="next2">もとに戻る</button>
+        </div>
+
+
+        <div class="if_lose2">
+            <h1>結果は…</h1>
+            <p>残念…！挑戦失敗だ…</p>
+            <button class="furidashi">もう一度挑戦する！！</button>
+        </div>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="js/main.js"></script>
+
+        </div>
+
+    
+    
+</main>
+
+ 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/main.js"></script>
+
+
+    
+
+</body>
+</html>

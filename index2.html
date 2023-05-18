@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/20171223192619.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <title>じゃんけんゲーム(初戦)
+    </title>
+</head>
+<body>
+    <header>
+        <a href="main.html" class="home">Homeに戻る</a>
+      </header>
+
+    <main>
+    <div class="jan-center">
+    <div class="main-word-fadeout">
+    <p>初戦スタート！！</p>
+    <p>最初はグーじゃんけん</p>
+    </div>
+
+    <div id="cpu1">
+        <button onclick="R_Click(0);"  class="jyanken_hand"><img src="img/jan0.png"></button>
+        <button onclick="R_Click(1);" class="jyanken_hand"><img src="img/jan1.png"></button>
+        <button onclick="R_Click(2);" class="jyanken_hand"><img src="img/jan2.png"></button>
+    
+    </div>
+
+
+        <div class="if_win1">
+            <p><span class="cpu2_hand"></span></p>
+            <p><img class="img2" src="img/jan.png" width="100" height="100"></p>
+
+            <p><span class="cpu3_hand"></span></p>
+            <p><img class="img3" src="img/jan.png" width="100" height="100"></p>
+
+
+            <h1>結果は…</h1>
+            <p><span class="player_name"></span>の勝ちだ！おめでとう！</p>
+            <p>最終戦に進む！！！</p>
+            <button class="next1">進む！</button>
+        </div>
+
+
+        <div class="if_draw1">
+  
+            <p><span class="cpu2_hand"></span></p>
+            <p><img class="img2" src="img/jan.png" width="100" height="100"></p>
+
+            <p><span class="cpu3_hand"></span></p>
+            <p><img class="img3" src="img/jan.png" width="100" height="100"></p>
+
+        
+            <h1>結果は…</h1>
+            <p>引き分け！</p>
+            <button class="furidashi">もう一度挑戦する！！</button>
+        </div>
+
+        <div class="if_lose1">
+
+            
+            <p><span class="cpu2_hand"></span></p>
+            <p><img class="img2" src="img/jan.png" width="100" height="100"></p>
+
+            <p><span class="cpu3_hand"></span></p>
+            <p><img class="img3" src="img/jan.png" width="100" height="100"></p>
+
+            <h1>結果は…</h1>
+            <p>負け！</p>
+            <button class="furidashi">もう一度挑戦する！！</button>
+      </div>
+
+</div>
+
+    
+    
+</main>
+
+ 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/main.js"></script>
+
+
+        
+    
+    
+
+</body>
+</html>
